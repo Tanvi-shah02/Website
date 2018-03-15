@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>my website</title>
+<link href="https://fonts.googleapis.com/css?family=handlee"
+rel="stylesheet">
+
+</head>
+<body>
+<body background="http://i64.tinypic.com/f4fr0j.jpg
+">
+<!--<h1>Auspoo.com</h1>-->
+<p><a href="https://www.w3schools.com"></a></p>
+
+<div class="section"> 
+<header> 
+    <h1 align="center "style="font-family: cursive;">Welcome to our canteen!!</h1>
+	</header>
+	<div id="mySidenav" class="sidenav">
+	<div class="tab">
+	<button type="button" onclick="myFunction()">Stock</button>
+	 <script type="text/javascript" src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+<div id="app" class="container">
+  <h1>
+  <!-- {{message}}>-->
+    <small>
+      Count : {{counter}}
+      <button @click="counter++">+</button>
+    </small>
+  </h1>
+ <!-- <input type="text" v-model="message"/>>-->
+  <div>
+    <button @click="toggle()">Toggle</button>
+    <p v-if="!hide" v-for="item in items">
+      {{item}}
+    </p>
+    <p v-else>Nothing here</p>
+  </div>
+</div>
+
+<!-- Our root Vue instance -->
+<script type="text/javascript">
+  var app = new Vue({
+    el: '#app',
+    data: {
+     <!-- message: 'Hello !',
+      counter: 0,
+      hide: true,
+      items: ['Snacks', 'Drinks', 'Paperwork']
+    },
+    methods: {
+      toggle: function () {
+        this.hide = !this.hide
+      }
+    }
+  })
+</script>
+	<button type="button" onclick="otherf()">Snacks</button>
+	Number: <input type="number" id="myNumber">
+​
+​
+​
+<!--<button onclick="myFunction()"></button>>-->
+​
+​
+​
+<script>
+function myFunction() {
+    document.getElementById("myNumber").stepUp(1);
+}
+</script>
+	<button type="button" onclick="drinks()">Drinks</button>
+	Number: <input type="number" id="myNumber">
+​
+​
+​
+<!--<button onclick="myFunction()"></button>>-->
+​
+​
+​
+<script>
+function myFunction() {
+    document.getElementById("myNumber").stepUp(1);
+}
+</script>
+	<button type="button" onclick="paperwork()">Paperwork</button>
+	Number: <input type="number" id="myNumber">
+​
+​
+​
+<!--<button onclick="myFunction()"></button>>-->
+​
+​
+​
+<script>
+function myFunction() {
+    document.getElementById("myNumber").stepUp(1);
+}
+</script>
+<p id="demo"></p>
+<h2 style="background-color:yellow" id="demo1">Hello Foodies.</h2>
+
+
+<script>
+function myFunction() { 
+    document.getElementById("demo1").innerHTML = "You can manage stocks here.";
+}
+function otherf()
+{
+	document.getElementById("demo1").innerHTML="Different types of snacks are available. You can have Balaji packets,puff,choclates,maggie....you can place order by increasing the above arrow on the left side into number box";
+
+}
+function drinks()
+{
+	document.getElementById("demo1").innerHTML="Different soft drinks are available and also ofcourse coffee for you....you can place order by increasing the above arrow on the left side into number box";
+}
+function paperwork()
+{ 
+     document.getElementById("demo1").innerHTML="Zerox,index and certificates are available here...you can place order by increasing the above arrow on the left side into number box";
+}
+	 
+
+
+
+
+
+var images = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-FieUpxzUEjNf_edRYRUadOg1-bvmmcJIRToWD7LwUWu-teW9','https://www.ndtv.com/cooks/images/moong-dal-samosa-new.jpg','https://www.hi5mart.com/image/cachhe/catalog/miscellaneous/Category/Soft%20Drink-848x388.jpg', 'http://farm9.staticflickr.com/8505/8530889880_267c2d8a49_z.jpg','http://ste.india.com/sites/default/files/2016/11/28/550650-maggi.jpg','https://www.firehouhttps://www.firehousesubs.com/media/1301/chips-stack.png','https://image.slidesharecdn.com/dbmslab-140507123851-phpapp02-150509060739-lva1-app6892/95/front-pages-of-practical-file-2-638.jpg?cb=1431151698'];
+var num = 0;
+function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+}
+function prev() {
+    var slider = document.getElementById('slider');
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.src = images[num];
+}
+</script>
+  <!--<button class="tablinks" onclick="openCity(event, 'HOme')">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'OTher')">Other</button>
+  <button class="tablinks" onclick="openCity(event, 'COntact')">Contact</button>-->
+
+
+
+<!-- Trigger the Modal -->
+  
+            <button onclick="prev()"> Prev </button>
+            <img id="slider" src="https://cdn.shopify.com/s/files/1/0151/0741/products/Chill_Maar_Beer_Humour-NGPS1788_480x480.png?v=1500639442" width="800px" height="500px"/>
+            <button onclick="next()"> Next </button>
+        
+<!--<img id="myImg" align="center-left" src="https://i.ytimg.com/vi/EW0dh6rRzEY/maxresdefault.jpg" alt="Trolltunga, Norway" width="900" height="500">-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+     
+     
+    
+	  
+		 <h1 class="quote" align="center">"Thank you for visit"</h1>
+		 </div>
+		 <form>
+		 <lable>first name:</lable>
+		 <input id="user"name="first name"type="text"required/><br/>
+		 <lable>last name:</lable>
+		 <input id="user"name="last name"type="text"required/><br/>
+		 <lable>your e-mail address:</lable>
+		 <input name="Email"type="text" placeholder="example@example@.com"/><br/>
+		 <lable>password:</lable>
+		 <input name="password" type="text"required/>
+		 <input type="submit" value="submit"/>
+		 </form>
+		<!-- <footer class="w3-container w3-teal w3-center w3-margin-top">-->
+  
+  <iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=_JP83o8mgfs&t=19s">
+</iframe>
+
+		 </body>
+</html>
