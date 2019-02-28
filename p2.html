@@ -2,19 +2,27 @@
 <html>
   <head>
        <title>my website</title>
-<link href="https://fonts.googleapis.com/css?family=handlee"
-rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=handlee" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+body{
+  background: url("https://www.wallpaperup.com/uploads/wallpapers/2018/02/01/1199275/5db621453e2ca2a3561652dc29531cfa-700.jpg");
+background-repeat: no-repeat;
+background-position: center;
+  background-size: cover;
+  position: relative;
+}
+</style>
 
 </head>
 <body>
-<body background="http://i64.tinypic.com/f4fr0j.jpg
-">
-<!--<h1>Auspoo.com</h1>-->
-<p><a href="https://www.w3schools.com"></a></p>
-
-<div class="section"> 
-<header> 
-    <h1 align="center "style="font-family: cursive;">Welcome to our canteen!!</h1>
+<div class="section">
+<header>
+  <h1 align="center "style="font-family: cursive; color:white;">Welcome to our canteen!!</h1>
 	</header>
 	<div id="mySidenav" class="sidenav">
 	<div class="tab">
@@ -25,7 +33,7 @@ rel="stylesheet">
 <div id="app" class="container">
   <h1>
   <!-- {{message}}>-->
-    <small>
+    <small style="color:white">
       Count : {{counter}}
       <button @click="counter++">+</button>
     </small>
@@ -36,7 +44,7 @@ rel="stylesheet">
     <p v-if="!hide" v-for="item in items">
       {{item}}
     </p>
-    <p v-else>Nothing here</p>
+    <p v-else style="color:white;">Nothing here</p>
   </div>
 </div>
 
@@ -58,41 +66,31 @@ rel="stylesheet">
   })
 </script>
 	<button type="button" onclick="otherf()">Snacks</button>
-	Number: <input type="number" id="myNumber">
-​
-​
+	Number: <input type="number" id="myNumber" style="color:white;">
 ​
 <!--<button onclick="myFunction()"></button>>-->
 ​
-​
-​
-<script>
+​<script>
 function myFunction() {
     document.getElementById("myNumber").stepUp(1);
 }
 </script>
 	<button type="button" onclick="drinks()">Drinks</button>
-	Number: <input type="number" id="myNumber">
+	Number: <input type="number" id="myNumber" style="color:white;>
 ​
+​<button onclick="myFunction()"></button>>
 ​
-​
-<!--<button onclick="myFunction()"></button>>-->
-​
-​
-​
-<script>
+​<script>
 function myFunction() {
     document.getElementById("myNumber").stepUp(1);
 }
 </script>
-	<button type="button" onclick="paperwork()">Paperwork</button>
+
+
+  <button type="button" onclick="paperwork()">Paperwork</button>
 	Number: <input type="number" id="myNumber">
 ​
-​
-​
-<!--<button onclick="myFunction()"></button>>-->
-​
-​
+​<!--<button onclick="myFunction()"></button>>-->
 ​
 <script>
 function myFunction() {
@@ -101,30 +99,22 @@ function myFunction() {
 </script>
 <p id="demo"></p>
 <h2 style="background-color:yellow" id="demo1">Hello Foodies.</h2>
-
-
 <script>
-function myFunction() { 
+function myFunction() {
     document.getElementById("demo1").innerHTML = "You can manage stocks here.";
 }
 function otherf()
 {
 	document.getElementById("demo1").innerHTML="Different types of snacks are available. You can have Balaji packets,puff,choclates,maggie....you can place order by increasing the above arrow on the left side into number box";
-
 }
 function drinks()
 {
 	document.getElementById("demo1").innerHTML="Different soft drinks are available and also ofcourse coffee for you....you can place order by increasing the above arrow on the left side into number box";
 }
 function paperwork()
-{ 
+{
      document.getElementById("demo1").innerHTML="Zerox,index and certificates are available here...you can place order by increasing the above arrow on the left side into number box";
 }
-	 
-
-
-
-
 
 var images = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-FieUpxzUEjNf_edRYRUadOg1-bvmmcJIRToWD7LwUWu-teW9','https://www.ndtv.com/cooks/images/moong-dal-samosa-new.jpg','https://www.hi5mart.com/image/cachhe/catalog/miscellaneous/Category/Soft%20Drink-848x388.jpg', 'http://farm9.staticflickr.com/8505/8530889880_267c2d8a49_z.jpg','http://ste.india.com/sites/default/files/2016/11/28/550650-maggi.jpg','https://www.firehouhttps://www.firehousesubs.com/media/1301/chips-stack.png','https://image.slidesharecdn.com/dbmslab-140507123851-phpapp02-150509060739-lva1-app6892/95/front-pages-of-practical-file-2-638.jpg?cb=1431151698'];
 var num = 0;
@@ -152,11 +142,11 @@ function prev() {
 
 
 <!-- Trigger the Modal -->
-  
-            <button onclick="prev()"> Prev </button>
+
+          <button onclick="prev()"> Prev </button>
             <img id="slider" src="https://cdn.shopify.com/s/files/1/0151/0741/products/Chill_Maar_Beer_Humour-NGPS1788_480x480.png?v=1500639442" width="800px" height="500px"/>
             <button onclick="next()"> Next </button>
-        
+
 <!--<img id="myImg" align="center-left" src="https://i.ytimg.com/vi/EW0dh6rRzEY/maxresdefault.jpg" alt="Trolltunga, Norway" width="900" height="500">-->
 
 <!-- The Modal -->
@@ -171,29 +161,37 @@ function prev() {
   <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
 </div>
-
-     
-     
-    
-	  
-		 <h1 class="quote" align="center">"Thank you for visit"</h1>
+	<h1 class="quote" align="center" style="color:black; background-color:yellow;">"Thank you for visit"</h1>
 		 </div>
-		 <form>
-		 <lable>first name:</lable>
-		 <input id="user"name="first name"type="text"required/><br/>
-		 <lable>last name:</lable>
-		 <input id="user"name="last name"type="text"required/><br/>
-		 <lable>your e-mail address:</lable>
-		 <input name="Email"type="text" placeholder="example@example@.com"/><br/>
-		 <lable>password:</lable>
-		 <input name="password" type="text"required/>
-		 <input type="submit" value="submit"/>
-		 </form>
-		<!-- <footer class="w3-container w3-teal w3-center w3-margin-top">-->
-  
-  <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=_JP83o8mgfs&t=19s">
-</iframe>
+     <!--start form-->
+     <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h3 style="color:white;" align="center
+        ">Contact us</h3>
+        <div class="col md-5 col-sm-5">
+          <form>
+            <div class="form-group">
+              <label style="color:white;">Name: </label>
+              <input class="form-control" type="text" name="" value="" placeholder="Enter Your name">
+            </div>
+            <div class="form-group">
+              <label style="color:white;">Email: </label>
+              <input class="form-control" type="text" name="" value="" placeholder="Enter Your Email-id">
+            </div>
+              <div class="form-group">
+              <label style="color:white;">Message: </label>
+              <input class="form-control" type="text" name="" value="" placeholder="Enter message">
+            </div>
+            <button class="btn btn-default">Submit</button>
+          </form>
+        </div>
+        <div class="col md-7 sol-sm-7">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end form-->
 
 		 </body>
 </html>
